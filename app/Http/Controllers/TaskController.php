@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 
 class TaskController extends Controller
 {
+
+
     public function index()
     {
 
@@ -79,7 +81,6 @@ class TaskController extends Controller
     }
     public function complete(Task $task)
     {
-
         $task->completed = true;
         $task->save();
 
